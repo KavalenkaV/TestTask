@@ -1,0 +1,42 @@
+/* scale 0.3 */
+@font-face {
+	font-family: garuda;
+	src:url(../media/fonts/Garuda-Bold.ttf);
+}
+
+@font-face {
+	font-family: bayon;
+	src:url(../media/fonts/Garuda-Bold.ttf);
+}
+
+@font-face {
+	font-family: futura;
+	src:url(../media/fonts/Garuda-Bold.ttf);
+}
+
+@font-face {
+	font-family: noto;
+	src:url(../media/fonts/Garuda-Bold.ttf);
+}
+/* ------------------------------------------ */
+.fl-l {
+	float: left;
+}
+
+.fl-r {
+	float: right;
+}
+
+/* round button */
+.rb {
+	width: px;
+	height: px;
+	border-radius: 50%;
+}
+
+.wrapper {
+	width: 860px;
+	min-height: 175px;
+	margin:0 auto;
+	background-color: #6a3505;
+}
