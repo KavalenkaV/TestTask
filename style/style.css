@@ -1,22 +1,22 @@
-/* scale 0.3 */
-@font-face {
+/* project scale 0.3 */
+/* @font-face {
 	font-family: garuda;
 	src:url(../media/fonts/Garuda-Bold.ttf);
 }
 
 @font-face {
 	font-family: bayon;
-	src:url(../media/fonts/Garuda-Bold.ttf);
+	src:url(../media/fonts/Bayonregular.ttf); */
 }
 
 @font-face {
 	font-family: futura;
-	src:url(../media/fonts/Garuda-Bold.ttf);
+	src:url(../media/fonts/FuturaStd-Bold.otf);
 }
 
 @font-face {
 	font-family: noto;
-	src:url(../media/fonts/Garuda-Bold.ttf);
+	src:url(../media/fonts/Noto%20Sans%20CJK%20SC%20Black.otf);
 }
 /* ------------------------------------------ */
 .fl-l {
@@ -29,14 +29,67 @@
 
 /* round button */
 .rb {
-	width: px;
-	height: px;
 	border-radius: 50%;
 }
 
 .wrapper {
 	width: 860px;
-	min-height: 175px;
+	min-height: 200px;
 	margin:0 auto;
 	background-color: #6a3505;
 }
+
+.noto-26 {
+	font: 9px noto;
+}
+
+.noto-32 {
+	font: 11px noto;
+}
+
+.noto-36 {
+	font: 12px noto;
+}
+
+
+/* =+=+=+=+=+= END OF COMMON PART =+=+=+=+=+=+=+=+=+= */
+
+.b-bar {
+	margin-top: 100px;
+	width: inherit;
+	min-height: 61px;
+	background: url(../media/images/BG%20overall.png) 0px 0px no-repeat;
+	-webkit-background-size:  860px 61px;
+	background-size:  860px 61px;
+}
+
+.hint-bar {
+	width: inherit;
+}
+
+.hint {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0px 155px 0 130px; 
+	color: #ffea00;
+	text-shadow: 0px 2px 1px #450005;
+}
+
+button {
+	border: 0px;
+	outline: 0px;
+}
+
+.info>.rb {
+	margin: 7px 0px 0px 52px;
+	padding: 0px;
+	color: #410008;
+	width: 30px;
+	height: 30px;
+	background: url(../media/images/info/bg%20copy%20normal.png) 0px 0px no-repeat;
+	background-size: 27px;
+}
+
+.info>.rb>.noto-36 {
+	color: #440009;
+} 

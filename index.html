@@ -9,14 +9,20 @@
 </head>
 <body>
 	<div class="wrapper">
-		<span class="fl-l">Line 31 wins GBP2</span>
-		<span class="fl-r">Click spin to start</span>
-		<div class="b-bar">	
+		
+		<div class="b-bar fl-l">
+
+			<div class="hint-bar fl-l">
+				<span class="hint noto-26 fl-l">Line 31 wins GBP2</span>
+				<span class="hint noto-26 fl-r">Click spin to start</span>
+			</div>	
 <!-- left part of bottom bar start-->
 			<div class="left-part fl-l">
 				
-				<form action="">
-					<button class="info rb fl-l">i</button>	
+				<form action="" class="info  fl-l">
+					<button class="rb fl-l">
+						<span class="noto-36">i</span>
+					</button>	
 				</form>
 				
 				<div class="total-bet fl-l">
@@ -38,13 +44,23 @@
 <!-- left part of bottom bar end-->	
 <!-- center part of bottom bar start-->	
 			<div class="center-part fl-l">
+				
+				<div class="treasure fl-l">
+					<span class="coin fl-l">coin</span>
+					<span class="score">$</span>
+				</div>
+
 				<span class="fl-l gl">good luck</span>
 				<span class="fl-l summ">$</span>
+
+				<label for="turbo"></label>
+				<input type="checkbox" name="turbo" id="turbo"><!--on/off turbo-->
+
 			</div class="fl-l">
 <!-- center part of bottom bar end-->	
 <!-- right part of bottom bar start-->	
 			<div class="fl-r">
-				<input type="checkbox" name="turbo" id=""><!--on/off turbo-->
+
 				<div class="start">
 					<div class="rc"> <!--rotation counter-->
 						<span class="play-mode"></span>
@@ -56,9 +72,9 @@
 							<li></li>
 							<li></li>
 						</ul>
-
 					</div>
 				</div>
+
 			</div>
 <!-- right part of bottom bar end-->	
 		</div>
