@@ -5,16 +5,23 @@ $(document).ready(function(){
 		CLASS_VISIBLE = 'visible';
 	
 	$.fx.off=1;
-
 	st.click(function(){
-		dm.toggle(CLASS_VISIBLE);
-	});
+			dm.toggle(CLASS_VISIBLE);
+		});
 
-	rb.click(function () {
-		var audio = new Audio(); 
-  			audio.src = '../media/sounds/Button_Click.wav'; 
-  			audio.autoplay = 'play';
-  			audio.class='inv';
-  			document.body.appendChild(audio);
-	});
+	loadSound();
+
+	var Button_Click = 'click';
+
+	function loadSound(){
+	createjs.Sound.registerSound('../media/sounds/Button_Click.wav', Button_Click); 	
+	};
+
+	function playSound(){
+		createjs.Sound.play(Button_Click);
+	}
+
+	rb.click(function(){
+		playSound(Button_Click);
+	})
 });
