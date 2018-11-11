@@ -324,6 +324,34 @@ input {
 	-webkit-background-size: 57px 35px;
 	background-size: 57px 35px;
 }
+/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */
+/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */
+/* =+=+=+=+=+=+=+= START Right part =+=+=+=+=+=+=+=+= */
+.rp {
+	width:110px;
+	height: 50px;
+	position: relative;
+}
+/* =+=+=+=+=+=+=+= START Spin button =+=+=+=+=+=+=+=+= */
+.spinn-but {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -28px;
+	right: 44px;
+	background: url(../media/images/Spin%20button/spin%20normal.png) 0px 0px no-repeat;
+	-webkit-background-size: 100px;
+	background-size: 100px;
+}
 
-/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */
-/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */
+.spinn-but:hover {
+background: url(../media/images/Spin%20button/spin%20hover.png) 0px 0px no-repeat;
+	-webkit-background-size: 100px;
+	background-size: 100px;
+}
+
+.spinn-but:focus {
+background: url(../media/images/Spin%20button/spin%20click.png) 0px 0px no-repeat;
+	-webkit-background-size: 100px;
+	background-size: 100px;
+}
