@@ -18,7 +18,7 @@
 	font-family: noto;
 	src:url(../media/fonts/Noto%20Sans%20CJK%20SC%20Black.otf);
 }
-/* ------------------------------------------ */
+
 .fl-l {
 	float: left;
 }
@@ -27,7 +27,6 @@
 	float: right;
 }
 
-/* round button */
 .rb {
 	border-radius: 50%;
 }
@@ -50,10 +49,7 @@
 .noto-36 {
 	font: 12px noto;
 }
-
-
 /* =+=+=+=+=+= END OF COMMON PART =+=+=+=+=+=+=+=+=+= */
-
 .b-bar {
 	margin-top: 100px;
 	width: inherit;
@@ -79,55 +75,255 @@ button {
 	border: 0px;
 	outline: 0px;
 }
-
 /* =+=+=+=+=+=+=+=+=+=+= START Info button =+=+=+=+=+=+=+=+=+=+= */
-
 .info {
 	width: 85px;
 	min-height: 50px;
 }
 
 .info>.rb {
-	margin: 7px 0px 0px 52px;
+	margin: 7px 0px 0px 50px;
 	padding: 0px;
 	color: #410008;
-	width: 30px;
-	height: 30px;
+	width: 33px;
+	height: 33px;
 	background: url(../media/images/info/bg%20copy%20normal.png) 0px 0px no-repeat;
-	background-size: 27px;
+	background-size: 30px;
 	position: relative;
 }
 
 .info>.rb>.noto-36 {
 	color: #440009;
-	font-size: 17px;
+	font-size: 19px;
 	position: absolute;
 	top: 1px;
-	left: 11px;
+	left: 12px;
+	text-shadow: 0px 2px 2px #ffc600;
 } 
 
 .info>.rb:hover {
 	background: url(../media/images/info/bg%20copy%20hover.png) 0px 0px no-repeat;
-	-webkit-background-size: 27px ;
-	background-size: 27px ;
+	-webkit-background-size: 30px ;
+	background-size: 30px ;
 }
 
 .info>.rb:focus {
-	margin: 8px 0px 0px 53px;
+	margin: 7px 0px 0px 51px;
 	background: url(../media/images/info/bg%20copy%20click.png) 0px 0px no-repeat;
-	-webkit-background-size: 27px ;
-	background-size: 27px ;
+	-webkit-background-size: 30px ;
+	background-size: 30px ;
 }
 
 .info>.rb:focus>.noto-36 {
-	top: 2px;
-	left: 12px;
+	top: 1px;
+	left: 13px;
 }
-
 /* =+=+=+=+=+=+=+=+=+=+= END Info button =+=+=+=+=+=+=+=+=+=+= */
 /* =+=+=+=+=+=+=+=+= START Total bet panel =+=+=+=+=+=+=+=+=+= */
-
 .total-bet {
 	width: 135px;
 	min-height: 50px;
+	background: url(../media/images/Total%20bet/bg_field.png) 0px 5px no-repeat;
+	-webkit-background-size: 131px 33px;
+	background-size: 131px 33px;
 }
+
+.total-bet .rb {
+	width: 29px;
+	height: 27px;
+	margin-top: 7px;
+	background: url(../media/images/Total%20bet/Ellipse%20normal.png) 0px 0px no-repeat;
+	-webkit-background-size: 27px;
+	background-size: 27px;
+	position: relative;
+} 
+
+.mi {
+	margin-left: 3px;
+}
+
+.pl {
+	margin-right: 5px;
+}
+
+.pl-c {
+	color: #440009;
+	font: 28px noto;
+	position: absolute;
+	text-shadow: 0px 2px 2px #ffc600;
+	bottom: -6px;
+	left: 5px;	
+}
+
+.mi-c{
+	width: 15px;
+	height: 5px;
+	border-radius: 2px;
+	background-color: #430009;
+	bottom: 0px;
+	left: 3px;
+	position: absolute;
+	top: 11px;
+	left: 6px;
+	box-shadow: 0px 1px 2px #ffc600; 	
+}
+
+.total-bet .rb:hover {
+	background: url(../media/images/Total%20bet/Ellipse%20hover.png) 0px 0px no-repeat;
+	-webkit-background-size: 27px;
+	background-size: 27px;
+}
+
+.total-bet .rb:focus {
+	background: url(../media/images/Total%20bet/Ellipse%20click.png) 0px 0px no-repeat;
+	-webkit-background-size: 27px;
+	background-size: 27px;
+}
+
+.total-bet .rb:focus .pl-c {
+	left: 6px;
+}
+
+.total-bet .rb:focus.pl {
+	margin-right: 4px;
+}
+
+.total-bet .rb:focus.mi {
+	background: url(../media/images/Total%20bet/Ellipse%20click.png) 1px 0px no-repeat;
+	-webkit-background-size: 27px;
+	background-size: 27px;
+}
+
+.total-bet .rb:focus .mi-c {
+	left: 7px;
+}
+
+.bet-size {
+	width: 67px;
+	min-height: 30px;
+	padding-top: 5px; 
+}
+
+.tb, 
+.coin, 
+.cash, 
+.score {
+	width: inherit;
+	text-align: center;
+	font: 10px noto;
+	color: #ff6972;
+	text-shadow: 0px 2px 2px #4e0005;
+}
+
+.tb, .coin {
+	font: 10px noto;
+	color: #ff6972;
+	text-transform: uppercase;
+}
+/* =+=+=+=+=+=+=+=+= END Total bet panel =+=+=+=+=+=+=+=+=+= */
+/* =+=+=+=+=+=+=+= START Central panel part =+=+=+=+=+=+=+=+= */
+.cash, .score {
+	font: 13px noto;
+	color: #ffd100;
+	line-height: 10px;
+}
+
+.center-part {
+	width: 410px;
+	margin: 0 auto;
+	min-height: 50px;
+	position: relative;
+}
+
+.treasure {
+	width: 69px;
+	min-height: 50px;
+	background: url(../media/images/win/glow_field.png) 0px 5px no-repeat;
+	-webkit-background-size: 69px 40px;
+	background-size: 69px 120px;
+}
+
+.coin {
+	margin-top: 5px;
+}
+
+.screen {
+	width: 280px;
+	height: 80px;
+	position: absolute;
+	background: url(../media/images/win/win%20bar.png) 0px 0px no-repeat;
+	-webkit-background-size: 340px 80px;
+	background-size: 275px 60px;
+	top: -5px;
+	left: 69px;
+}
+
+.gl, .summ {
+	width: inherit;
+	text-align: center;
+	font: 30px noto;
+	color: #ffe400;
+	text-shadow: 0px 2px 2px #710008;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 55px;
+}
+
+.summ {
+visibility: hidden;
+}
+
+.screen:hover .gl {
+	display: none;
+}
+
+.screen:hover .summ {
+	visibility: visible;
+}
+/* =+=+=+=+=+=+=+= START Turbo switch =+=+=+=+=+=+=+=+= */
+input {
+	display: none;
+}
+
+.sw {
+	display: inline-block;
+	width: 57px;
+	height: 35px;
+	margin: 5px 2px 0 0;
+	background: url(../media/images/CheckBox/OFF/TURBO%20off%20normal.png) 0px 0px no-repeat;
+	-webkit-background-size: 57px 35px;
+	background-size: 57px 35px;
+}
+
+.sw:hover {
+	background: url(../media/images/CheckBox/OFF/TURBO%20off%20hover.png) 0px 0px no-repeat;
+	-webkit-background-size: 57px 35px;
+	background-size: 57px 35px;
+}
+
+.sw:focus {
+	background: url(../media/images/CheckBox/OFF/TURBO%20off%20click.png) 0px 0px no-repeat;
+	-webkit-background-size: 57px 35px;
+	background-size: 57px 35px;
+}
+
+#turbo_1:checked ~ .sw {
+	background: url(../media/images/CheckBox/ON/TURBO%20on%20normal.png) 0px 0px no-repeat;
+	-webkit-background-size: 57px 35px;
+	background-size: 57px 35px;
+}
+
+#turbo_1:checked ~ .sw:hover {
+	background: url(../media/images/CheckBox/ON/TURBO%20on%20hover.png) 0px 0px no-repeat;
+	-webkit-background-size: 57px 35px;
+	background-size: 57px 35px;
+}
+
+#turbo_1:checked ~ .sw:focus {
+	background: url(../media/images/CheckBox/ON/TURBO%20on%20click.png) 0px 0px no-repeat;
+	-webkit-background-size: 57px 35px;
+	background-size: 57px 35px;
+}
+
+/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */
+/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Buttom bar</title>
+	<title>Bottom bar</title>
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/reset.css">
 	<script src="script/script.js"></script>
@@ -28,17 +28,22 @@
 				<div class="total-bet fl-l">
 					
 					<form action="">
-						<button class="rb fl-l">-</button>
+						<button class="rb mi fl-l">
+							<div class="mi-c"> </div>
+						</button>
 					</form>
 					
 					<div class="fl-l bet-size">
 						<span class="fl-l tb">total bet</span>
-						<span class="fl-l cash">$</span>
+						<span class="fl-l cash">$ 1</span>
 					</div>	
 
 					<form action="">
-						<button class="rb fl-r">+</button>
+						<button class="rb pl fl-r">
+							<span class="pl-c">+</span>
+						</button>
 					</form>
+
 				</div>		
 			</div>
 <!-- left part of bottom bar end-->	
@@ -47,14 +52,17 @@
 				
 				<div class="treasure fl-l">
 					<span class="coin fl-l">coin</span>
-					<span class="score">$</span>
+					<span class="fl-l score">$ 12</span>
 				</div>
+				<div class="screen ">
+					<span class="fl-l gl">good luck!</span>
+					<span class="fl-l summ">$100 000 000</span>
+				</div>
+				
 
-				<span class="fl-l gl">good luck</span>
-				<span class="fl-l summ">$</span>
+				<input type="checkbox" name="turbo" id="turbo_1" class="switch_but fl-r"><!--on/off turbo-->
 
-				<label for="turbo"></label>
-				<input type="checkbox" name="turbo" id="turbo"><!--on/off turbo-->
+				<label for="turbo_1" class="sw fl-r"> </label>
 
 			</div class="fl-l">
 <!-- center part of bottom bar end-->	
