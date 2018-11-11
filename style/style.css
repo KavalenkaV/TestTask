@@ -385,7 +385,7 @@ background: url(../media/images/Spin%20button/spin%20click.png) 0px 0px no-repea
 }
 
 .play-mode {
-	width: inherit;
+	width: 100px;
 	text-align: center;
 	color: #3d0000;
 	line-height: 25px;
@@ -429,6 +429,10 @@ background: url(../media/images/Spin%20button/spin%20click.png) 0px 0px no-repea
 
 .visible {
 	display: inline-block;
+}
+
+.inv{
+	visibility: hidden;
 }
 /* =+=+=+=+=+=+= END  Drop-menu auto =+=+=+=+=+=+=+= */
 /* =+=+=+=+=+=+=+= END Right  part =+=+=+=+=+=+=+=+= */
