@@ -43,7 +43,7 @@
 }
 
 .noto-32 {
-	font: 11px noto;
+	font: 10px noto;
 }
 
 .noto-36 {
@@ -324,19 +324,24 @@ input {
 	-webkit-background-size: 57px 35px;
 	background-size: 57px 35px;
 }
-/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */
-/* =+=+=+=+=+=+=+= END Turbo switch =+=+=+=+=+=+=+=+= */
+/* =+=+=+=+=+=+=+= END Turbo  switch =+=+=+=+=+=+=+=+= */
+/* =+=+=+=+=+= END START Central panel part =+=+=+=+= */
 /* =+=+=+=+=+=+=+= START Right part =+=+=+=+=+=+=+=+= */
 .rp {
-	width:110px;
+	width: 225px;
 	height: 50px;
 	position: relative;
 }
 /* =+=+=+=+=+=+=+= START Spin button =+=+=+=+=+=+=+=+= */
+.start {
+	width: inherit;
+}
+
 .spinn-but {
 	width: 100px;
 	height: 100px;
 	position: absolute;
+	z-index: 999;
 	top: -28px;
 	right: 44px;
 	background: url(../media/images/Spin%20button/spin%20normal.png) 0px 0px no-repeat;
@@ -355,3 +360,75 @@ background: url(../media/images/Spin%20button/spin%20click.png) 0px 0px no-repea
 	-webkit-background-size: 100px;
 	background-size: 100px;
 }
+/* =+=+=+=+=+=+=+= END Spin button =+=+=+=+=+=+=+=+= */
+/* =+=+=+=+=+=+= START Drop-menu  auto =+=+=+=+=+=+= */
+.rc {
+	width: 130px;
+	height: 35px;
+	margin: 5px 0 0 0;
+	background: url(../media/images/Auto/auto_bg.png) 0px 0px no-repeat;
+	-webkit-background-size: 130px 35px;
+	background-size: 130px 35px;
+}
+
+
+.rc:hover {
+	background: url(../media/images/Auto/Button%20copy%20hover.png) 0px 0px no-repeat;
+	-webkit-background-size: 130px 35px;
+	background-size: 130px 35px;
+}
+
+.rc:focus {
+	background: url(../media/images/Auto/Button%20copy%20click.png) 0px 0px no-repeat;
+	-webkit-background-size: 130px 35px;
+	background-size: 130px 35px;
+}
+
+.play-mode {
+	width: inherit;
+	text-align: center;
+	color: #3d0000;
+	line-height: 25px;
+	margin-top: 5px;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 2;
+}
+
+.dropIt {
+	display: none;
+	width: 130px;
+	height: 130px;
+	padding:5px 0px 5px 15px; 
+	background: url(../media/images/Auto/spinselect_box_bg.png) 0px 0px no-repeat;
+	-webkit-background-size: 130px;
+	background-size: 130px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+	color: #ffd100;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.dropIt li:first-child {
+	padding-left: 20px;
+	background: url(../media/images/Auto/fiture.png) 0px 0px no-repeat;
+	-webkit-background-size: 15px;
+	background-size: 15px;
+}
+
+.dropIt li{
+	line-height: 15px;
+}
+
+.dropIt li:hover{
+	color: #fff;
+}
+
+.visible {
+	display: inline-block;
+}
+/* =+=+=+=+=+=+= END  Drop-menu auto =+=+=+=+=+=+=+= */
+/* =+=+=+=+=+=+=+= END Right  part =+=+=+=+=+=+=+=+= */
