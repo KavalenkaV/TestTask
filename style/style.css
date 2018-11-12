@@ -49,11 +49,16 @@
 .noto-36 {
 	font: 12px noto;
 }
+
+.soft {
+	transition: 1s ease;
+}
+
 /* =+=+=+=+=+= END OF COMMON PART =+=+=+=+=+=+=+=+=+= */
 .b-bar {
 	margin-top: 100px;
 	width: inherit;
-	min-height: 61px;
+	height: 61px;
 	background: url(../media/images/BG%20overall.png) 0px 0px no-repeat;
 	-webkit-background-size:  860px 61px;
 	background-size:  860px 61px;
@@ -64,6 +69,7 @@
 }
 
 .hint {
+	height: 13px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 0px 155px 0 130px; 
@@ -114,7 +120,7 @@ button {
 /* =+=+=+=+=+=+=+=+= START Total bet panel =+=+=+=+=+=+=+=+=+= */
 .total-bet {
 	width: 135px;
-	min-height: 50px;
+	height: 50px;
 	background: url(../media/images/Total%20bet/bg_field.png) 0px 5px no-repeat;
 	background-size: 131px 33px;
 }
@@ -206,13 +212,13 @@ button {
 .center-part {
 	width: 410px;
 	margin: 0 auto;
-	min-height: 50px;
+	height: 50px;
 	position: relative;
 }
 
 .treasure {
 	width: 69px;
-	min-height: 50px;
+	height: 50px;
 	background: url(../media/images/win/glow_field.png) 0px 5px no-repeat;
 	background-size: 69px 120px;
 }
@@ -316,12 +322,12 @@ input {
 }
 
 .spinn-but:hover {
-background: url(../media/images/Spin%20button/spin%20hover.png) 0px 0px no-repeat;
+	background: url(../media/images/Spin%20button/spin%20hover.png) 0px 0px no-repeat;
 	background-size: 100px;
 }
 
 .spinn-but:focus {
-background: url(../media/images/Spin%20button/spin%20click.png) 0px 0px no-repeat;
+	background: url(../media/images/Spin%20button/spin%20click.png) 0px 0px no-repeat;
 	background-size: 100px;
 }
 /* =+=+=+=+=+=+=+= END Spin button =+=+=+=+=+=+=+=+= */
