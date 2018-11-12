@@ -51,7 +51,7 @@
 }
 
 .soft {
-	transition: 1s ease;
+	transition: 0.1s ease;
 }
 
 /* =+=+=+=+=+= END OF COMMON PART =+=+=+=+=+=+=+=+=+= */
@@ -66,10 +66,10 @@
 
 .hint-bar {
 	width: inherit;
+	height: 13px;
 }
 
 .hint {
-	height: 13px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 0px 155px 0 130px; 
@@ -112,7 +112,7 @@ button {
 	background-size: 33px ;
 }
 
-.info>.rb:focus {
+.info>.rb:active {
 	background: url(../media/images/info/bg%20copy%20click.png) 0px 0px no-repeat;
 	background-size: 33px ;
 }
@@ -169,13 +169,13 @@ button {
 	background-size: 27px;
 }
 
-.total-bet .rb:focus {
+.total-bet .rb:active {
 	background: url(../media/images/Total%20bet/Ellipse%20click.png) 0px 0px no-repeat;
 	background-size: 27px;
 }
 
-.total-bet .rb:focus.mi {
-	background: url(../media/images/Total%20bet/Ellipse%20click.png) 1px 0px no-repeat;
+.total-bet .rb:active.mi {
+	background: url(../media/images/Total%20bet/Ellipse%20click.png) 0px 0px no-repeat;
 	background-size: 27px;
 }
 
@@ -278,7 +278,7 @@ input {
 	background-size: 57px 35px;
 }
 
-.sw:focus {
+.sw:active {
 	background: url(../media/images/CheckBox/OFF/TURBO%20off%20click.png) 0px 0px no-repeat;
 	background-size: 57px 35px;
 }
@@ -326,7 +326,7 @@ input {
 	background-size: 100px;
 }
 
-.spinn-but:focus {
+.spinn-but:active {
 	background: url(../media/images/Spin%20button/spin%20click.png) 0px 0px no-repeat;
 	background-size: 100px;
 }
@@ -349,7 +349,7 @@ input {
 	background-size: 130px 35px;
 }
 
-.rc:focus {
+.rc:active {
 	background: url(../media/images/Auto/Button%20copy%20click.png) 0px 0px no-repeat;
 	background-size: 130px 35px;
 }
