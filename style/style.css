@@ -1,17 +1,4 @@
 /* project scale 0.3 */
-/* @font-face {
-	font-family: garuda;
-	src:url(../media/fonts/Garuda-Bold.ttf);
-}
-
-@font-face {
-	font-family: bayon;
-	src:url(../media/fonts/Bayonregular.ttf); */
-}
-#player {
-	visibility: hidden;
-}
-
 @font-face {
 	font-family: futura;
 	src:url(../media/fonts/FuturaStd-Bold.otf);
