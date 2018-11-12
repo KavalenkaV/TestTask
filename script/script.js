@@ -1,6 +1,5 @@
-$(window).on('load', function(){
+$(document).ready(function(){
 	$('form').on('submit', function (e) { e.preventDefault() });
-
 	var st = $('.rc'),
 		rb =$('.rb'),
 		dm = $('.dropIt'),
