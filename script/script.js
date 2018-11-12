@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on('load', function(){
 	var st = $('.rc'),
 		rb =$('.rb'),
 		dm = $('.dropIt'),
@@ -15,10 +15,10 @@ $(document).ready(function(){
 	var Button_Click = 'click';
 
 	function loadSound(){
-	createjs.Sound.registerSound('../media/sounds/Button_Click.wav', Button_Click); 	
+	createjs.Sound.registerSound('../media/sounds/Button_Click%20%28online-audio-converter.com%29.mp3', Button_Click); 	
 	};
 
-	function playSound(){
+	function playSound(Button_Click){
 		createjs.Sound.play(Button_Click);
 	}
 
