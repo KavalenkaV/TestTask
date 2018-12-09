@@ -3,8 +3,15 @@ $(document).ready(function(){
 	var st = $('.rc'),
 		rb =$('.rb'),
 		dm = $('.dropIt'),
-		CLASS_VISIBLE = 'visible';
-	
+		Button_Click = 'click',
+		CLASS_VISIBLE = 'visible',
+		plus = $('.pl'),
+		minus = $('.mi'),
+		counterDisplay = $('.cash'),
+		currentCount = counterDisplay.text(),
+		counterNum = +currentCount.replace(/\D+/g,"")
+		;
+			
 	$.fx.off=1;
 
 	st.click(function(){
@@ -12,8 +19,6 @@ $(document).ready(function(){
 		});
 
 	loadSound();
-
-	var Button_Click = 'click';
 
 	function loadSound(){
 	createjs.Sound.registerSound('../media/sounds/Button_Click1.mp3', Button_Click); 	
@@ -26,4 +31,30 @@ $(document).ready(function(){
 	rb.click(function(){
 		playSound(Button_Click);
 	})
+
+	function increase() {
+
+		return function(){            
+				counterNum++;
+				showCounter(counterNum);
+				return counterNum;    
+			}
+		}
+
+	function decrease() {
+
+		return function(){            
+				counterNum--;
+				showCounter(counterNum);
+				return counterNum;    
+			}
+		}
+
+	function showCounter(){
+			counterDisplay.text('$' + ' ' + counterNum);
+		}
+
+	plus.click(increase());
+	minus.click(decrease());
+
 });
